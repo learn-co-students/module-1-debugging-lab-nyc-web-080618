@@ -10,8 +10,10 @@ end
 
 def turtle_traits(turtles)
   turtles.map do |turtle|
-    turtle[:traits].each do |trait|
-      trait
-    end
+    if turtle[:traits].class==String
+      []<<turtle[:traits]
+    else
+    turtle[:traits]
+  end
   end
 end
