@@ -24,6 +24,8 @@ class Person
     else
       10.times do
         "not a ballin candy lover"
+      end #loop require one end that was missing 
     end
   end
-end
+
+end #end of class
