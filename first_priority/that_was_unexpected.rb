@@ -1,13 +1,22 @@
+require "pry"
+
 class Person
   attr_accessor :name, :candy_lover
+
+  @@all = []
 
   def initialize(name, candy_lover)
     @name = name
     @candy_lover = candy_lover
   end
 
+  def self.all
+    @@all
+  end
+
   def tall?
     true
+
   end
 
   def basketball_player?
@@ -27,3 +36,5 @@ class Person
     end
   end
 end
+
+end#END OF CLASS
